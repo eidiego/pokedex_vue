@@ -1,7 +1,32 @@
 <template>
   <div class="container">
     <div class="row mt-2">
-      <div class="col mb-2">palco</div>
+      
+      <!-- início lado esquerdo -->
+      <div class="col mb-2">
+        <div class="card palco">
+          <div class="card-header"></div>
+
+          <div class="card-body bg-pokebola bg-normal">
+            <div class="pokemon">
+              <img src="@/assets/imgs/pokemons/001.png">
+            </div>
+          </div>
+
+          <div class="card-footer">
+         
+          <nav class="nav nav-pills nav-fill">
+            <!-- menu de navegação -->
+          </nav>
+
+          <div class="detalhes">
+            <!-- exibe dados de acordo com o menu de navegação -->
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- fim lado esquerdo -->
 
       <!-- início lado direito -->
       <div class="col mb-2 pokedex">        
@@ -33,7 +58,7 @@
               <h1>1 Bulbasaur</h1>
               <span>grama</span>
               <div class="cartao-pokemon-img">
-                <img src="@/assets/img/pokemons/001.png">
+                <img src="@/assets/imgs/pokemons/001.png">
               </div>
             </div>
             <!-- fim listagem dinâmica -->
@@ -131,6 +156,30 @@ body {
 
 .bg-normal {
   background-color: #cecece
+}
+
+.bg-pokebola {
+  background-image: url("~@/assets/imgs/pokebola.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.palco {
+  color: #fff;
+  background-color: #333;
+  -webkit-box-shadow: 2px 2px 10px rgba(230, 223, 223, 0.77);
+  -moz-box-shadow: 2px 2px 10px rgba(230, 223, 223, 0.77);
+  box-shadow: 2px 2px 10px rgba(230, 223, 223, 0.77);
+  border-radius: 10px;
+}
+
+.pokemon {
+  display: block;
+  text-align: center;
+}
+
+.detalhes {
+  margin: 20px 30px 20px 30px;
 }
 
 </style>
